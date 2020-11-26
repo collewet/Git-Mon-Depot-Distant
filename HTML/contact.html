@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--en tête-->
+    <header>
+        <img src="image/jarditou_logo.jpg" width="250" height="75" alt="jarditou">
+        <h1><b>Contact</b></h1>
+        <hr>
+    </header>
+<!--formulaire 1-->
+<p>* Ces zones sont obligatoires</p>
+    
+<div>
+    
+    
+     <fieldset>  
+            <legend>Vos coordonnées</legend>  
+        <div>
+            <label for="nom"> *Votre nom:<abbr title="required"></abbr></label>
+            <input id="nom" type="text" name="nom">
+        </div>
+         <div>
+            <label for="prénom"> *Votre prénom:<abbr title="required">*</abbr></label>
+            <input id="prénom" type="text" name="prénom">
+        </div>
+            <br>
+  Sexe*: 
+                 <label for="Féminin"></label> 
+                <input type="radio" id="Féminin" name="Sexe" required> 
+                 Féminin
+                <label for="Masculin"></label>
+                <input type="radio" id="Masculin" name="sexe" required>
+                Masculin
+                <br>
+                <form>
+        <div>
+                 <label for="bday">Date de naissance*:</label>
+                 <input type="date" id="bday" name="bday" required>
+        </div>
+                </form>
+                Code postal*:
+                <label for="Codepostal*"></label>
+                <input type="text" id="Codepostal*" required>
+                <br>
+                 Adresse:
+                <label for="Adresse"></label>
+                 <input type="text" id="Adresse">
+                <br>
+                 Ville:
+                <label for="ville"></label>
+                <input type="text" id="ville">
+                <br>
+                Email:
+                <label for="Email"></label>
+                <input type="Email" placeholder="dave.loper@afpa.fr">
+    </fieldset>
+<!-- formulaire 2-->
+        </div>
+                <br>
+        <div>
+    <fieldset>
+        <legend>Votre demande</legend>  
+    
+         Sujet*:
+        <label for="Sujet*"></label> 
+        <select name="sujet" id="choisirunsujet" required>
+            <option value="">--Veuillez choisir un sujet--</option>
+            <option value="sujet1">sujet1</option>
+            <option value="sujet2">sujet2</option> 
+            <option value="sujet3">sujet3</option> 
+        </select>
+
+            <Form action="/My-handling-form-page" method="post">
+
+        <div>
+    <label for="msg">Votre question:</label>
+    <textarea id="msg" name="user_message" required></textarea>
+</div>
+            </Form>
+    </fieldset>
+</div>
+
+    <input type="checkbox" name="checkbox" value="check" required>*J'accepte le traitement de ce formulaire
+<br>
+    <input type="submit" value="envoyer">
+    <input type="submit" value="annuler">
+<hr>
+
+    <ul type="liste">
+         <li><u>Mentions légales</u></li>
+        <li><u>Horaires</u></li>
+        <li><u>Plan du site</u></li>
+    </ul>
+</body>
+</html> 
