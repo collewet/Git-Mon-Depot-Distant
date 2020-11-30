@@ -1,0 +1,129 @@
+.logo_jarditou{
+    margin-bottom: 0px;
+    position: relative;
+    margin-left: 2em;
+    line-height: 30em;
+}
+
+.tout{
+    font-size: 17pt;
+    margin-bottom: 20px;
+    margin-top: 20pt;
+    position: relative; left: 2%;
+    padding-left: 400px;
+}
+.img{
+    width: 100%;
+    margin: auto;
+}
+a{
+    color: white;
+}
+
+.lien{background-color: black;
+        border: 12px solid black;
+        font-size: 13px;
+        justify-content: left;
+        margin-bottom: 10px;
+
+}
+li{list-style: none;
+     display: inline;
+    }
+
+body{
+    margin: 1% 17% 1% 17%;
+
+    }
+
+/* *********************accueil*******************/
+aside{
+    width: 40%;
+    padding-right: 2em;
+    margin-right: auto;
+}
+.colonne{
+    display: block;
+    background-color:lightgray;
+    float: right;
+    max-height: 100%;
+    height: 30em;
+    column-width: 30em; 
+}
+.alignecolonne{
+    display:flex;
+    justify-content: flex-center;
+
+    }
+
+    
+
+
+    
+@media screen and (max-width: 768px)
+{
+    .colonne{
+    display: none;
+    }
+
+ 
+
+    h1, h2, h3, h4, p{
+        font-size: 10px;
+        width: 100%;
+        padding-left: 0;
+    } 
+    body{
+        margin: 1% 17% 1% 17%;
+
+        }
+    .lien{
+        display: flex left;
+        justify-content: left;
+        margin-left: 0px;
+        
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-right: 10px;
+        border: 5px
+
+    }
+    li{
+        display: flex;
+    }
+    .tout{
+        
+        display: inline;
+        font-size: 8pt;
+        padding-left: 50px;
+    }
+        
+/********************tableau*************************/
+    tfoot{
+        margin: 1% 10% 1% 10%;
+    }
+   
+
+
+/********************contact***************************/
+  
+.scroller {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scrollbar-width: 100%;
+    scrollbar-color: grey;
+    
+}
+}
+
+
+
+      
+        
+    
+    
+
+    
+
+
