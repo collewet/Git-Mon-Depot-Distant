@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body class="container">
+    <header>
+         <!-------------------logo50%--------------->
+            <div class="row">
+                <div class="col-8"><img src="image/jarditou_logo.jpg" alt="jarditou_logo"  style="width: 20%"></div> <h1>Tout le jardin</h1>  
+            </div>
+        </div>    
+    </header>
+        <!--------------navigation---------->
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+     <!-- Toggler/collapsibe Button -->
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+     <span class="navbar-toggler-icon"></span>
+    </button>   
+         <div class="collapse navbar-collapse" id="collapsibleNavbar">
+             <ul class="navbar-nav">
+                <li class="nav-item">
+                        <a class="nav-link" href="index.html">Jarditou.com</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="tableau.html">Tableau</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+         </ul>
+        </div>
+        <form action="destinatiion.php" method="post"id="formulaire_contact">
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="recherche" placeholder="votre promotion" aria-label="recherche">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">recherche</button>
+  <!--  </form> -->
+    </nav>
+         <br>
+            <!-----------------pomotion----------->
+    <img src="image/promotion.jpg" class="mw-auto" height="auto" width="100%" alt="jarditou" >
+    </header>
+<!--formulaire 1-->
+<p>* Ces zones sont obligatoires</p>
+    
+    <div>
+        <fieldset>  
+             <legend>Vos coordonnées</legend> 
+                <form  action="destination.php"method="post"id="formulaire_contact">
+                    <label for="nom"> *Nom:<abbr title="required"></abbr></label>
+                     <input class="form-control form-control-sm" type="text" placeholder="Veuillez saisir votre nom" id="nom">
+                     <span id="missnom"></span><br>
+                     </div>
+                    <div>
+                    <label for="prénom"> *Prénom:<abbr title="required">*</abbr></label>
+                     <input class="form-control form-control-sm" type="text" placeholder="Veuillez saisir votre prénom"id="prenom">
+                     <span id="missprenom"></span><br> 
+                    </div>
+                    Sexe*: 
+                    <div class="form-check form-check-inline">
+                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Feminin</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Masculin</label>
+                     </div>
+                    <div class="form-check form-check-inline">
+                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                         <label class="form-check-label" for="inlineRadio3">Neutre</label>
+                     </div>
+                 
+               
+     <div>
+                
+                 <label for="bday">Date de naissance*:</label>
+                 <input class="form-control" type="date" id="bday" name="bday" requiered >
+        </div>
+                
+                    Code postal*:
+                    <label for="Codepostal*"></label>
+                     <input class="form-control" type="text" id="Codepostal*"required >
+                     Adresse:
+                    <label for="Adresse"></label>
+                     <input class="form-control" type="text" id="Adresse">
+                     Ville:
+                     <label for="ville"></label>
+                     <input class="form-control" type="text" id="ville">
+                    Email*:
+                     <label for="Email"></label>
+                     <input class="form-control" type="Email" placeholder="dave.loper@afpa.fr"id="Email"required>
+        </fieldset>
+<!-- formulaire 2-->
+        </div>
+                <br>
+    <div>
+        <fieldset>
+            <legend>Votre demande</legend>  
+    
+            Sujet*:
+         
+                 <label for="Sujet*"></label> 
+                 <select class="form-control" name="sujet" id="choisirunsujet"required >
+                    <option value="">--Veuillez choisir un sujet--</option>
+                    <option value="sujet1">sujet1</option>
+                    <option value="sujet2">sujet2</option> 
+                    <option value="sujet3">sujet3</option> 
+            </select>   
+                 
+                    <div>
+                        <label for="msg">Votre question:</label>
+                             <textarea class="form-control" id="msg" name="user_message"></textarea>
+                    </div>
+                </Form>
+        </fieldset>
+    </div>
+        <input type="checkbox" name="checkbox" value="check" required>*J'accepte le traitement de ce formulaire
+        <br>
+    <select> 
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+                <input type="submit" name="soumettre" id="button1" method="post"> 
+            </label>
+            <label class="btn btn-secondary">
+                <input type="reset" name="effacer" id="button2" method="post"> 
+            </label>
+    
+        </div>
+    </select>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Toggler/collapsibe Button -->
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                 <span class="navbar-toggler-icon"></span>
+             </button>   
+             <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                         <li class="nav-item">
+                         <a class="nav-link" href="index.html">Mentions légales</a>
+                         </li>
+                         <li class="nav-item">
+                        <a class="nav-link" href="tableau.html">Horaires</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="contact">Plan du site</a>
+                        </li>
+                    </ul>
+                </div> 
+        </nav>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="asset/javascript.js"></script>
+</body>
+</html> 
